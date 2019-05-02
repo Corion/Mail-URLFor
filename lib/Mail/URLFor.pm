@@ -52,7 +52,7 @@ our @default_links;
 
 =over 4
 
-=item B<<clients>>
+=item B<clients>
 
 Arrayref of the classes (or instances) of mail clients to
 render links for.

@@ -37,7 +37,7 @@ an object on the web page with an email in a local mail client.
 
 ### Options
 
-- **&lt;clients**>
+- **clients**
 
     Arrayref of the classes (or instances) of mail clients to
     render links for.
