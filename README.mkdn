@@ -4,7 +4,7 @@
 
 # NAME
 
-Mail::URLFor - create links to emails in native clients
+Mail::URLFor - create links to emails for native clients
 
 # SYNOPSIS
 
