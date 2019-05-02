@@ -25,7 +25,7 @@ is $urls->{'Gmail'}, 'https://mail.google.com/mail/#search/rfc822msgid%3A12345.a
     or diag Dumper $urls;
 is $urls->{'Thunderlink'}, 'thunderlink://messageid=12345.abcdef%40example.com', "Thunderlink plugin renders"
     or diag Dumper $urls;
-is $urls->{'OSX'}, 'message:%3C12345.abcdef%40example.com%3E', "OSX plugin renders"
+is $urls->{'OSX'}, 'message:%3C12345.abcdef@example.com%3E', "OSX plugin renders"
     or diag Dumper $urls;
 is $urls->{'RFC2392'}, 'mid:12345.abcdef@example.com', "RFC 2392 plugin renders"
     or diag Dumper $urls;

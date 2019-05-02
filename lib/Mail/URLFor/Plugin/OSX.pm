@@ -18,15 +18,15 @@ has 'moniker' => (
 
 with 'Mail::URLFor::Role::Template';
 
+around 'munge_messageid' => sub { $_[2] };
+
 1;
 
 __END__
 
 =head1 SEE ALSO
 
-OSX mail link URL format:
-
-message:%3C0100015a808a3ce2-973c1a1d-cc5a-44f6-a60b-d0c006e10ba0-000000@email.amazonses.com%3E
+L<https://apple.stackexchange.com/questions/300437/is-it-possible-to-deep-link-to-a-specific-email-in-mail-app-on-mac-os-x>
 
 
 =cut
