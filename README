@@ -1,0 +1,38 @@
+Mail::URLFor - create links to emails in native clients
+
+DESCRIPTION
+
+This module allows you to create (clickable) URLs to emails that
+will open in the respective (native) client or Gmail.
+
+This is useful if you have a web application but still want to connect
+an object on the web page with an email in a local mail client.
+
+
+INSTALLATION
+
+This is a Perl module distribution. It should be installed with whichever
+tool you use to manage your installation of Perl, e.g. any of
+
+  cpanm .
+  cpan  .
+  cpanp -i .
+
+Consult http://www.cpan.org/modules/INSTALL.html for further instruction.
+Should you wish to install this module manually, the procedure is
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+
+
+
+
+
+
+
+
+
+
