@@ -57,7 +57,7 @@ our @default_links;
 Arrayref of the classes (or instances) of mail clients to
 render links for.
 
-Defaults to all C<<::Plugin> classes.
+Defaults to all C<::Plugin> classes.
 
 =back
 
@@ -74,8 +74,8 @@ has clients => (
     
 Renders the URL using the moniker of the plugin.
 
-Returns an L<URI> object, but you should mostly treat it
-as an opaque string. Returns C<undef>, if the moniker is unknown.
+Returns something that should mostly be treated as an opaque string.
+Returns C<undef>, if the moniker is unknown.
 
 Currently, the returned string is always
 percent-encoded already, but this may change in the future.

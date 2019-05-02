@@ -42,7 +42,7 @@ an object on the web page with an email in a local mail client.
     Arrayref of the classes (or instances) of mail clients to
     render links for.
 
-    Defaults to all `<::Plugin` classes.
+    Defaults to all `::Plugin` classes.
 
 ## `->url_for( $rfc822messageid, $client = 'Gmail' )`
 
@@ -51,8 +51,8 @@ an object on the web page with an email in a local mail client.
 
 Renders the URL using the moniker of the plugin.
 
-Returns an [URI](https://metacpan.org/pod/URI) object, but you should mostly treat it
-as an opaque string. Returns `undef`, if the moniker is unknown.
+Returns something that should mostly be treated as an opaque string.
+Returns `undef`, if the moniker is unknown.
 
 Currently, the returned string is always
 percent-encoded already, but this may change in the future.
