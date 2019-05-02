@@ -2,7 +2,7 @@ package Mail::URLFor;
 use strict;
 use Module::Pluggable
     sub_name => '_plugins',
-    instantiate => 'new'
+    instantiate => 'new',
     ;
 use Moo 2;
 use Filter::signatures;

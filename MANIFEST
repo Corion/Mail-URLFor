@@ -3,6 +3,7 @@ Changes
 lib/Mail/URLFor.pm
 lib/Mail/URLFor/Plugin/Gmail.pm
 lib/Mail/URLFor/Plugin/OSX.pm
+lib/Mail/URLFor/Plugin/RFC2392.pm
 lib/Mail/URLFor/Plugin/Thunderlink.pm
 lib/Mail/URLFor/Role/Template.pm
 LICENSE
