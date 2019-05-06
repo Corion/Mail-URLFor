@@ -18,14 +18,21 @@ Mail::URLFor - Create deep links into mail clients
 =head1 SYNOPSIS
 
     my $links = Mail::URLFor->new();
-    
+
     my $messageid = 'mail.abcdef.123456@example.com';
-    
+
     my $urls = $links->urls_for($messageid);
-    
+
     for my $client (keys %$urls) {
         print "$client: $urls->{$client}\n";
     };
+
+    # Output:
+    # Thunderlink: thunderlink://messageid=mail.abcdef.123456%40example.com
+    # OSX: message:%3Cmail.abcdef.123456@example.com%3E
+    # RFC2392: mid:mail.abcdef.123456@example.com
+    # Gmail: https://mail.google.com/mail/#search/rfc822msgid%3Amail.abcdef.123456%40example.com
+
 
 =head1 DESCRIPTION
 
@@ -34,7 +41,7 @@ will open in the respective (native) client or Gmail.
 
 This is useful if you have a web application but still want to connect
 an object on the web page with an email in a local mail client.
-    
+
 =cut
 
 our @default_links;
@@ -71,7 +78,8 @@ has clients => (
 =head2 C<< ->url_for( $rfc822messageid, $client = 'Gmail' ) >>
 
     my $url = $links->url_for( '1234.abc@example.com', 'Gmail' );
-    
+    print "<a href="$url">See mail</a>"
+
 Renders the URL using the moniker of the plugin.
 
 Returns something that should mostly be treated as an opaque string.

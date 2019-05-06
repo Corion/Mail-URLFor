@@ -33,5 +33,5 @@ is $urls->{'RFC2392'}, 'mid:12345.abcdef@example.com', "RFC 2392 plugin renders"
 for my $client (@distributed_clients) {
     is $links->url_for($messageid, $client), $urls->{$client}, "->url_for(..., $client) works identically to ->urls_for";
 };
-    
+
 done_testing;
