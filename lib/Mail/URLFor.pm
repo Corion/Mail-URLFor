@@ -13,7 +13,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-Mail::URLFor - Create links to emails for native clients
+Mail::URLFor - Create deep links into mail clients
 
 =head1 SYNOPSIS
 
