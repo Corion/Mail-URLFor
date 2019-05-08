@@ -1,5 +1,5 @@
 {
-   "abstract" : "create links to emails in native clients",
+   "abstract" : "Create deep links into mail clients",
    "author" : [
       "Max Maischein <corion@cpan.org>"
    ],
@@ -35,12 +35,15 @@
             "Filter::signatures" : "0.09",
             "Moo" : "2",
             "Moo::Role" : "0",
+            "URI" : "0",
             "URI::Escape" : "0",
+            "URI::mid" : "0",
             "perl" : "5.008"
          }
       },
       "test" : {
          "requires" : {
+            "Data::Dumper" : "0",
             "Test::More" : "0"
          }
       }
