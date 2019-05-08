@@ -4,19 +4,25 @@
 
 # NAME
 
-Mail::URLFor - Create links to emails for native clients
+Mail::URLFor - Create deep links into mail clients
 
 # SYNOPSIS
 
     my $links = Mail::URLFor->new();
-    
+
     my $messageid = 'mail.abcdef.123456@example.com';
-    
+
     my $urls = $links->urls_for($messageid);
-    
+
     for my $client (keys %$urls) {
         print "$client: $urls->{$client}\n";
     };
+
+    # Output:
+    # Thunderlink: thunderlink://messageid=mail.abcdef.123456%40example.com
+    # OSX: message:%3Cmail.abcdef.123456@example.com%3E
+    # RFC2392: mid:mail.abcdef.123456@example.com
+    # Gmail: https://mail.google.com/mail/#search/rfc822msgid%3Amail.abcdef.123456%40example.com
 
 # DESCRIPTION
 
@@ -47,7 +53,7 @@ an object on the web page with an email in a local mail client.
 ## `->url_for( $rfc822messageid, $client = 'Gmail' )`
 
     my $url = $links->url_for( '1234.abc@example.com', 'Gmail' );
-    
+    print "<a href="$url">See mail</a>"
 
 Renders the URL using the moniker of the plugin.
 
@@ -61,3 +67,31 @@ percent-encoded already, but this may change in the future.
 
     my $urls = $links->urls_for( '1234.abc@example.com' );
     print $urls->{'Gmail'};
+
+# REPOSITORY
+
+The public repository of this module is
+[http://github.com/Corion/Mail::URLFor](http://github.com/Corion/Mail::URLFor).
+
+# SUPPORT
+
+The public support forum of this module is
+[https://perlmonks.org/](https://perlmonks.org/).
+
+# BUG TRACKER
+
+Please report bugs in this module via the RT CPAN bug queue at
+[https://rt.cpan.org/Public/Dist/Display.html?Name=Mail-URLFor](https://rt.cpan.org/Public/Dist/Display.html?Name=Mail-URLFor)
+or via mail to [mail-urlfor-Bugs@rt.cpan.org](https://metacpan.org/pod/mail-urlfor-Bugs@rt.cpan.org).
+
+# AUTHOR
+
+Max Maischein `corion@cpan.org`
+
+# COPYRIGHT (c)
+
+Copyright 2019 by Max Maischein `corion@cpan.org`.
+
+# LICENSE
+
+This module is released under the same terms as Perl itself.
