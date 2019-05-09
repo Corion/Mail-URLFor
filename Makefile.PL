@@ -51,6 +51,9 @@ my %module = (
         'URI'                => 0,
         'URI::Escape'        => 0,
         'URI::mid'           => 0,
+        'Module::Pluggable'  => 0,
+        'feature'            => 0,
+        'namespace::autoclean' => 0,
     },
     TEST_REQUIRES => {
         'Test::More'   => 0,
