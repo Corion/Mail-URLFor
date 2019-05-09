@@ -21,14 +21,16 @@ no_index:
     - inc
 requires:
   Filter::signatures: '0.09'
+  Module::Pluggable: '0'
   Moo: '2'
   Moo::Role: '0'
   URI: '0'
   URI::Escape: '0'
   URI::mid: '0'
+  namespace::autoclean: '0'
   perl: '5.008'
 resources:
   repository: git://github.com/Corion/Mail-URLFor.git
-version: '0.01'
+version: '0.02'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
 x_static_install: 1

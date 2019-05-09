@@ -1,2 +1,6 @@
+0.02 2019-05-09
+    * Fix prerequisites (thanks to SREZIC and MANWAR)
+      This addresses RT #129286 und GH #1.
+
 0.01 2019-05-08
     * Released on an unsuspecting world

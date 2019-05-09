@@ -33,11 +33,13 @@
       "runtime" : {
          "requires" : {
             "Filter::signatures" : "0.09",
+            "Module::Pluggable" : "0",
             "Moo" : "2",
             "Moo::Role" : "0",
             "URI" : "0",
             "URI::Escape" : "0",
             "URI::mid" : "0",
+            "namespace::autoclean" : "0",
             "perl" : "5.008"
          }
       },
@@ -56,7 +58,7 @@
          "web" : "https://github.com/Corion/Mail-URLFor"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_static_install" : 1
 }

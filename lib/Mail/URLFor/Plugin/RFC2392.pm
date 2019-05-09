@@ -20,7 +20,7 @@ Mail::URLFor::Plugin::RFC2392 - deep links to mails for RFC2392
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub render($self, $rfc882messageid ) {
     return URI->new( $rfc882messageid, 'mid:' )
