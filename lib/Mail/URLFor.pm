@@ -35,7 +35,7 @@ Mail::URLFor - Create deep links into mail clients
 
 =head1 ONLINE DEMO
 
-There is an online demo of the functionality at L<http://corion.net/mail-urlfor.psgi> .
+There is an online demo of the functionality at L<https://corion.net/mail-urlfor.psgi> .
 
 Paste a valid message id into the input field and click on the appropriate link
 to open the email in that mail client if the mail exists in that mail client.
