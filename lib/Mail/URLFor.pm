@@ -33,6 +33,12 @@ Mail::URLFor - Create deep links into mail clients
     # RFC2392: mid:mail.abcdef.123456@example.com
     # Gmail: https://mail.google.com/mail/#search/rfc822msgid%3Amail.abcdef.123456%40example.com
 
+=head1 ONLINE DEMO
+
+There is an online demo of the functionality at L<http://corion.net/mail-urlfor.psgi> .
+
+Paste a valid message id into the input field and click on the appropriate link
+to open the email in that mail client if the mail exists in that mail client.
 
 =head1 DESCRIPTION
 
