@@ -1,7 +1,7 @@
 package Mail::URLFor::Plugin::Gmail;
 use Moo 2;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 

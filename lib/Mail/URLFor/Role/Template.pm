@@ -9,7 +9,7 @@ use namespace::autoclean;
 
 requires 'template';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub munge_messageid( $self, $messageid ) {
     uri_escape($messageid)
